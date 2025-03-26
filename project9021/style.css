@@ -255,7 +255,17 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: rgb(27, 26, 26)
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Dark overlay */
+    url('background.jpg') center/cover no-repeat fixed;
+    padding-top: 70px;
+}
+@media (max-width: 768px) {
+    .home-section {
+      background-attachment: scroll; /* Disable fixed on mobile */
+      background-size: cover; /* Ensures image covers full screen */
+    }
+  }
 }
 
 .home-content {
