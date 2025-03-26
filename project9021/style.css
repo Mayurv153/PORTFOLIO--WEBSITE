@@ -144,6 +144,7 @@ body {
     gap: 10px;
     transition: var(--transition);
     padding: 5px 0;
+    
 }
 
 .logo:hover {
@@ -266,7 +267,7 @@ body {
       background-size: cover; /* Ensures image covers full screen */
     }
   }
-}
+
 
 .home-content {
     display: flex;
@@ -282,8 +283,8 @@ body {
 .home-image {
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
     position: relative;
 }
 
@@ -308,8 +309,8 @@ body {
 .footer-social {
     display: flex;
     gap: 15px;
-    align-items:center;
-    position: left;
+    align-items:left bottom;
+    position: left bottom;
 }
 
 .footer-social a {
@@ -1108,6 +1109,7 @@ h2 {
     .home-image img {
         width: 200px;
         height: 200px;
+        gap: 1px;
         border-radius: 50%;
         object-fit: cover;
         border: 4px solid var(--primary-color);
